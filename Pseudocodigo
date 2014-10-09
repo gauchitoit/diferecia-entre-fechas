@@ -1,0 +1,25 @@
+Funcion DifEntreFechas(Val F1,F2:fecha):entero
+
+Var
+   C , N1, N2: enterp
+   
+Inicio
+      C (== 0
+	  N1(== F1D + F1M1*100 + F1A*10000
+      N2(== F2D + F2M*100 + F2A*10000
+      Mientras (N2>N1) hacer
+	   C (== C +1
+	   F1D (== F1*D + 1
+	 Si(F1*D > FinMes (F1M,F1A))entonces
+	  F1*D (== 1
+	  F1*M (== F1*M+1
+	  Si (F1*M>12)entonces
+	    F1M (== 1
+	    F1A (== F1*A+1
+	  Fsi
+	Fsi
+  N1 (== F1D +F1M*100+F1A*10000) 
+  Entonces
+  Devolver (C)
+ Fmientras
+Ffuncion
